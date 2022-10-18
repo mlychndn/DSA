@@ -27,6 +27,7 @@ function isPalindrome(str) {
 }
 
 function longestPalindrome(str) {
+  if (str.length === 1) return str;
   let subStrArr = [];
   let countArr = [];
   let palindromeStr = "";
@@ -60,3 +61,4 @@ function longestPalindrome(str) {
 
 console.log(longestPalindrome("babad"));
 console.log(longestPalindrome("cbbd"));
+console.log(longestPalindrome("a"));
